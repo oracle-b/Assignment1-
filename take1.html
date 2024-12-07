@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Club</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Engineering Society</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to the Engineering Society!</h1>
+      <p>Innovate, Collaborate, Create.</p>
+      <button onclick="learnMore()">Learn More</button>
+    </section>
+
+    <section id="about" class="about">
+      <h2>About Us</h2>
+      <p>The Engineering Society is a place for students to explore their passions in technology, design, and problem-solving. Join us to participate in exciting projects and competitions!</p>
+    </section>
+
+    <section id="events" class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>Robotics Workshop - December 10, 2024</li>
+        <li>Hackathon - January 15, 2025</li>
+        <li>Engineering Expo - March 5, 2025</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 MMU University Engineering Society. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
