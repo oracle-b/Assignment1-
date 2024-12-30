@@ -1,65 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Engineering Club</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Korean Language Society</title>
+    <link rel="stylesheet" href="take1.css">
+
 </head>
 <body>
-  <header>
+    <div class="header">
+        <img src="korea flag.png" alt="Korean Flag">
+        <div>Korean Language Society</div>
+    </div>
     <nav>
-      <div class="logo">Engineering Society</div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#events">Events</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+        <a href="#about">ABOUT US</a>
+        <a href="#activities">EXCITING ACTIVITIES</a>
+        <a href="#classes">AVAILABLE CLASSES</a>
+        <a href="#join">JOIN US NOW!</a>
     </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to the Engineering Society!</h1>
-      <p>Innovate, Collaborate, Create.</p>
-      <button onclick="learnMore()">Learn More</button>
+    <section class="events-section">
+        <h2>Upcoming Events</h2>
+        
+        <div class="event-card">
+            <h3>Korean Language Workshop</h3>
+            <p class="date">March 15, 2025 | 2:00 PM - 4:00 PM</p>
+            <p>Join us for an interactive workshop to improve your Korean speaking skills. Open for all levels!</p>
+        </div>
+        
+        <div class="event-card">
+            <h3>Korean Movie Night</h3>
+            <p class="date">April 5, 2025 | 6:00 PM - 9:00 PM</p>
+            <p>Enjoy a popular Korean film with subtitles, followed by a discussion on culture and language nuances.</p>
+        </div>
+        
+        <div class="event-card">
+            <h3>K-Pop Dance Class</h3>
+            <p class="date">April 20, 2025 | 1:00 PM - 3:00 PM</p>
+            <p>Experience the excitement of K-Pop dance moves in a fun and energetic class led by professional dancers.</p>
+        </div>
     </section>
-
-    <section id="about" class="about">
-      <h2>About Us</h2>
-      <p>The Engineering Society is a place for students to explore their passions in technology, design, and problem-solving. Join us to participate in exciting projects and competitions!</p>
-    </section>
-
-    <section id="events" class="events">
-      <h2>Upcoming Events</h2>
-      <ul>
-        <li>Robotics Workshop - December 10, 2024</li>
-        <li>Hackathon - January 15, 2025</li>
-        <li>Engineering Expo - March 5, 2025</li>
-      </ul>
-    </section>
-
-    <section id="contact" class="contact">
-      <h2>Contact Us</h2>
-      <form id="contactForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2024 MMU University Engineering Society. All rights reserved.</p>
-  </footer>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
