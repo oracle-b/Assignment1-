@@ -56,7 +56,7 @@ hero {
   width: 100%;
   height: 75%;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
-  opacity: 0.5; /* Set opacity for a subtle overlay effect */
+  opacity: 1; /* Set opacity for a subtle overlay effect */
 }
 .hero-text {
   text-align: center;
