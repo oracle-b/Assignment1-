@@ -34,34 +34,51 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #333; /* Dark gray text color */
+  color: #000000; /* Dark gray text color */
 }
-.hero {
-  background-color: #f0f0f0; /* Light gray background */ /* Optional: Change to a different color */
-  color: #000000;
+hero {
+  background-color: #a1a1a1; /* Light gray background */ /* Optional: Change to a different color */
+  color: #d0cccc;
   text-align: center;
   padding: 100px 0; /* Adjust padding for height */
 }
 
 .hero-content {
-  max-width: 600px; /* Set a maximum width for the content */
+   /* Set a maximum width for the content */
   margin: 0 auto; /* Center the content horizontally */
 }
 .hero-image {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0; 
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 75%;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
-  opacity: 0.8; /* Set opacity for a subtle overlay effect */
+  opacity: 0.5; /* Set opacity for a subtle overlay effect */
 }
-
 .hero-text {
-  position: relative; /* To position text in front of the image */
-  z-index: 5; 
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+}
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #707070;
+  text-align: center;
+  cursor: pointer;
+}
+.hero-text button:hover {
+  background-color: #555;
+  color: rgb(0, 0, 0);
 }
 main {
   padding: 20px;
@@ -74,7 +91,7 @@ main {
 
 .news-section1 {
   display: flex; /* Use flexbox for horizontal layout */
-  border: 1px solid #ccc; /* Light gray border */
+  border: 1px solid #3f3f3f; /* Light gray border */
   padding: 10px;
   margin-right: 20px;
 }
@@ -98,13 +115,13 @@ main {
 
 .news-section2 {
   display: flex; /* Use flexbox for horizontal layout */
-  border: 1px solid #ccc; /* Light gray border */
+  border: 1px solid #3f3f3f; /* Light gray border */
   padding: 10px;
   margin-right: 20px;
 }
 .news-section3 {
   display: flex; /* Use flexbox for horizontal layout */
-  border: 1px solid #ccc; /* Light gray border */
+  border: 1px solid #3f3f3f; /* Light gray border */
   padding: 10px;
   margin-right: 20px;
 }
