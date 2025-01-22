@@ -26,6 +26,7 @@ header {
   margin-right: 10px;
   margin-left: 40px; 
 }
+
 .nav a{ 
   text-decoration: none;
   
@@ -50,28 +51,45 @@ header {
   background-color: white; /* Change background to white on hover */
   color: rgb(233, 78, 78); /* Change text color to lightblue */
 } 
+/* Media query for smaller screens (e.g., mobile) */
+@media screen and (max-width: 768px) {
+  .nav {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center; /* Center the links vertically */
+  }
 
+  .nav a {
+    margin: 10px 0; /* Add spacing between links vertically */
+  }
+  .column {
+    width: 250px; /* Reduce width for smaller screens */
+  }
+  .hero-text{
+    font-size: calc(2rem + 1.5vw);
+  }
+}
 hero {
   background-color: #a1a1a1; /* Light gray background */ /* Optional: Change to a different color */
   color: #d0cccc;
   text-align: center;
   padding: 100px 0; /* Adjust padding for height */
   font-family: 'Chewy', serif;
+  
 }
 
 .hero-content {
    /* Set a maximum width for the content */
   margin: 0 auto; /* Center the content horizontally */
-
+  position: relative;
 }
 .hero-image {
-  position: relative;
+  
   top: 0;
   right: 0; 
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 75vh;
   object-fit: cover; /* Maintain aspect ratio and cover the container */
   opacity: 1; /* Set opacity for a subtle overlay effect */
   border-radius: 20px;
@@ -80,13 +98,19 @@ hero {
   margin-top: 50px;
   text-align: center;
   position: absolute;
-  font-size: 4rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(255, 255, 255);
   font-family: 'Chewy', serif;
 }
+.hero-text h1{
+  font-size: calc(2rem + 1.5vw);
+}
+.hero-text p{
+  font-size: calc(1rem + 1.5vw);
+}
+
 .events-section {
   background-color: white; /* Set section background to white */
   margin : 3rem 3rem;
@@ -122,6 +146,7 @@ hero {
 
 .column img {
   margin-right: 50px;
+  object-fit: cover;
 }
 
 .column:hover {
