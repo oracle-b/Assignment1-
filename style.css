@@ -61,9 +61,6 @@ header {
   .nav a {
     margin: 10px 0; /* Add spacing between links vertically */
   }
-  .column {
-    width: 250px; /* Reduce width for smaller screens */
-  }
   .hero-text{
     font-size: calc(2rem + 1.5vw);
   }
@@ -116,7 +113,8 @@ hero {
   margin : 3rem 3rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 2rem; /* Add padding to the section */
-  border-radius: 20px; /* Add border radius to the section */
+  border-radius: 20px;
+  align-items: center; /* Add border radius to the section */
 }
 
 .section-heading {
@@ -128,29 +126,48 @@ hero {
 
 .container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
+  flex-wrap: wrap; /* Allow columns to wrap to the next row */
+  justify-content: center; /* Center the columns horizontally */
+  max-width: 100%;
+  align-items: center;
+  margin : 0px 20px;
 }
 
 .column {
   display: flex;
+  flex-direction: row; /* Display column content vertically */
+  align-items: center; /* Center content within the column */
   background-color: #f0f0f0;
   padding: 20px;
   text-align: center;
-  width: 600px;
-  transition: transform 0.3s ease-in-out;
-  margin-bottom: 10px;
-  border-radius: 30px;
-  margin :0 auto;
+  width: 100%; /* Adjust width as needed */
+  margin: 20px; /* Add spacing between columns */
+  border-radius: 35px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  height: 250px;
 }
 
 .column img {
+  width: 100px; /* Adjust image width */
+  height: 100px; /* Adjust image height */
+  margin-bottom: 10px;
   margin-right: 50px;
-  object-fit: cover;
+  margin-left: 45px;
+  border-radius: 50%; /* Make the image circular */
+}
+.column p {
+  margin-top: 10px; /* Add spacing between image and text */
 }
 
 .column:hover {
   transform: translateY(-10px);
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 /* Past Events Section */
@@ -194,6 +211,13 @@ hero {
 .grid-item img:hover {
   transform: scale(1.5);
   border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+  .row {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 
