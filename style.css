@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 body {
   font-family: 'Nanum Gothic', sans-serif;
   margin: 0;
@@ -27,38 +28,54 @@ header {
   margin-left: 40px; 
 }
 
-.nav a{ 
+
+.nav a {
   text-decoration: none;
   margin: 0 15px;
 }
+
 .nav button {
   display: inline-block;
   padding: 0.7rem 2px;
-  background-color: rgb(240, 122, 122); /* Initial blue background */
-   /* Initial text color */
-  text-decoration: none; 
+  background-color: rgb(240, 122, 122);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
   font-size: 1rem;
   font-weight: 600;
-  border-radius: 50px; /* Rounded corners */
-  transition: all 0.3s ease-in-out; /* Smooth transition effect */
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
   margin-right: 15px;
   padding: 10px 25px;
   color: rgb(255, 255, 255);
-  border : none;
+  border: none;
 }
-@media screen and (max-width: 768px) {
+
+.nav button:hover {
+  background-color: white;
+  color: rgb(233, 78, 78);
+}
+
+/* Responsive Navigation (refer to previous response for details) */
+@media screen and (max-width: 500px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+  }
   .nav {
     flex-direction: column;
-    align-items: center;
-    position: absolute; /* Position the navigation off-screen */
+    align-items: flex-start;
+    position: absolute;
+    gap: 0;
+    padding: 1rem;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    visibility: hidden; /* Initially hide the navigation */
-    opacity: 0; /* Initially hide the navigation */
+    background-color: rgba(0, 0, 0, 0.8);
+    visibility: hidden;
+    opacity: 0;
     transition: visibility 0.3s, opacity 0.3s;
+    overflow: hidden;
   }
 
   .nav.active {
@@ -67,33 +84,20 @@ header {
   }
 
   .nav a {
-    margin: 15px 0;
+    display:block;
+    width:100%;
+    margin: o.5rem 0;
+    padding: 0.rem 0;
     color: #fff;
+    text-align: left;
+    border: 0;
   }
 
   .header-container {
     position: relative;
   }
-
-  .menu-icon {
-    display: block; /* Show the menu icon */
-  }
-
-  .menu-icon i {
-    font-size: 24px;
-    color: #333;
-  }
+ 
 }
-
-/* Hamburger Menu Icon */
-.menu-icon {
-  display: none; /* Hide the icon by default */
-}
-.nav button:hover {
-  background-color: white; /* Change background to white on hover */
-  color: rgb(233, 78, 78); /* Change text color to lightblue */
-} 
-/* Media query for smaller screens (e.g., mobile) */
 
 hero {
   background-color: #a1a1a1; /* Light gray background */ /* Optional: Change to a different color */
@@ -247,6 +251,7 @@ hero {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+    overflow: hidden;
   }
 }
 
