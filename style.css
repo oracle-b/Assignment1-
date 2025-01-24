@@ -146,6 +146,8 @@ hero {
 .video-section {
   margin: 3rem 0;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .video-container {
@@ -356,4 +358,39 @@ footer {
 
 .copyright {
   font-size: 0.8em; /* Smaller font size for copyright text */
+}
+
+.past-events {
+  margin: 50px 0;
+}
+
+.event-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-details {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.event-media {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+  grid-gap: 20px; /* Adjust gap between images */
+}
+
+.event-media img,
+.event-media video {
+  width: 100%; 
+  height: auto;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) { /* Adjust for smaller screens */
+  .event-media {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
 }
