@@ -146,8 +146,7 @@ hero {
 .video-section {
   margin: 3rem 0;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+  
 }
 
 .video-container {
@@ -155,6 +154,8 @@ hero {
   width: 640px; /* Adjust width as needed */
   height: 360px; /* Adjust height accordingly */
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
 .video-player {
