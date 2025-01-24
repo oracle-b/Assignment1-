@@ -155,12 +155,12 @@ hero {
 }
 
 .video-container {
-  position: relative;
+  position: flex;
   display : flex;
   width: 640px; /* Adjust width as needed */
   height: 360px; /* Adjust height accordingly */
   overflow: hidden;
-  
+  align-items: center;
 
 }
 
