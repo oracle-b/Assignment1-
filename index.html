@@ -34,11 +34,7 @@
         </div>
       </div>
       <section class="video-section">
-        <div class="video-title">
-        <h2>Introducing our Korean Language Society</h2>
-      </div>
         <div class="video-container">
-        
           <video class="video-player" controls>
             <source src="asg vide (1).mp4" type="video/mp4">
             Your browser does not support the video tag.
@@ -46,46 +42,42 @@
           <button class="fullscreen-button" onclick="toggleFullscreen()">Fullscreen</button>
         </div>
       </section>
-        <section class="events-section">
-            <h2 class="section-heading">Upcoming Events</h2> 
-            <div class="container">
-              <img src="hangul.png" alt="hangul" height="150" class="event-image">
-                <img src="hangul.png" alt="hangul" height="150">
-                <div>
-                  <h3>Hangul from Scratch</h3>
-                  <p>3 FEB, 8.30 pm -10.30pm</p>
-                  <p>CNMX1004</p>
-                  <p>Introduction to basic writing</p>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <img src="kimchi.png" alt="kimchi" height="150" class="event-image">
-                <img src="kimchi.png" alt="kimchi" height="150">
-                <div>
-                  <h3>Kimchi 101</h3>
-                  <p>3 FEB, 8.30 pm -10.30pm</p>
-                  <p>CNMX1004</p>
-                  <p>Introduction to basic writing</p>
-                </div>
-              </div>
-            </div>
-            <div class="container">
-              <img src="mini love.png" alt="mini love" height="150" class="event-image">
-                <img src="mini love.png" alt="mini love" height="150">
-                <div>
-                  <h3>A Night of Hope</h3>
-                  <p>3 FEB, 8.30 pm -10.30pm</p>
-                  <p>CNMX1004</p>
-                  <p>Introduction to basic writing</p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <div id="image-modal" class="modal">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <img id="modal-image" src="" alt="Event Image">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="kimchi1.png" style="width:100%"> 
+          <div class="text">
+            <h3>Kimchi 101</h3>
           </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="movie.png" style="width:100%">
+          <div class="text">
+            <h3>Movie Night</h3>
+          </div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="hangul1.png" style="width:100%">
+          <div class="text">
+            <h3>Hangul Writing Workshop</h3>
+          </div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
           
           <section class="past-events-section">
             <h2 class="section-heading">Past Events</h2>
