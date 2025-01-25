@@ -383,8 +383,13 @@ footer {
 }
 
 .past-events {
-  margin: 50px 0;
+  background-color: white; /* Set section background to white */
+  margin : 3rem 3rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem; /* Add padding to the section */
+  border-radius: 20px; /* Add border radius to the section */
 }
+
 
 .event-header {
   text-align: center;
