@@ -201,7 +201,7 @@ hero {
 
 .slideshow-container {
   position: relative;
-  max-width: 100%;
+  max-width: 800px;
   margin: 0 auto; /* Center the slideshow */
 }
 
@@ -213,7 +213,7 @@ hero {
 
 .mySlides img {
   vertical-align: middle;
-  max-height: 50%;
+  max-height: 100%;
 }
 
 /* The dots/bullets/indicators */
