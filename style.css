@@ -213,6 +213,7 @@ hero {
 
 .mySlides img {
   vertical-align: middle;
+  max-height: 50%;
 }
 
 /* The dots/bullets/indicators */
