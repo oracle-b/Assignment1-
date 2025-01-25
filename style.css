@@ -203,6 +203,7 @@ hero {
   position: relative;
   max-width: 800px;
   margin: 0 auto; /* Center the slideshow */
+  align-items: center;
 }
 
 .mySlides {
@@ -401,6 +402,7 @@ footer {
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-bottom: 20px; /* Add margin for spacing */
+  align-items: center;
 }
 
 .event-media {
