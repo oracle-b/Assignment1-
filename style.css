@@ -204,6 +204,7 @@ hero {
   max-width: 800px;
   margin: 0 auto; /* Center the slideshow */
   align-items: center;
+  display : flex;
 }
 
 .mySlides {
